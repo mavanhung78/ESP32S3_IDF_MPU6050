@@ -12,11 +12,11 @@ Example is tested on ESP-IDF v4.4, v5.1 and ESP32 Wrover Module
 Connect `SCL` and `SDA` pins to the following pins with appropriate pull-up
 resistors.
 
-| Name                                    | Description           | Defaults   |
-| --------------------------------------- | --------------------- | ---------- |
-| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SCL` | GPIO number for `SCL` | `esp32` 22 |
-| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SDA` | GPIO number for `SDA` | `esp32` 21 |
-| `CONFIG_EXAMPLE_MPU6050_I2C_CLOCK_HZ`   | I2C Clock Freq        | 100000     |
+| Name                                    | Description           | ESP32 Default | ESP32-S3 Default |
+|-----------------------------------------|----------------------|--------------|------------------|
+| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SCL` | GPIO number for `SCL` | GPIO22       | GPIO9            |
+| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SDA` | GPIO number for `SDA` | GPIO21       | GPIO8            |
+| `CONFIG_EXAMPLE_MPU6050_I2C_CLOCK_HZ`   | I2C Clock Frequency   | 100000       | 100000           |
 
 
 ## Logs
