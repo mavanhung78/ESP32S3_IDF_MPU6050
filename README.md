@@ -32,11 +32,11 @@ J --> G
 Connect `SCL` and `SDA` pins to the following pins with appropriate pull-up
 resistors.
 
-| Name                                    | Description           | Defaults   |
-| --------------------------------------- | --------------------- | ---------- |
-| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SCL` | GPIO number for `SCL` | `esp32` 22 |
-| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SDA` | GPIO number for `SDA` | `esp32` 21 |
-| `CONFIG_EXAMPLE_MPU6050_I2C_CLOCK_HZ`   | I2C Clock Freq        | 100000     |
+| Name                                    | Description           | Defaults  |
+| --------------------------------------- | --------------------- | --------- |
+| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SCL` | GPIO number for `SCL` | `esp32` 9 |
+| `CONFIG_EXAMPLE_MPU6050_I2C_MASTER_SDA` | GPIO number for `SDA` | `esp32` 8 |
+| `CONFIG_EXAMPLE_MPU6050_I2C_CLOCK_HZ`   | I2C Clock Freq        | 100000    |
 
 
 ## Logs
