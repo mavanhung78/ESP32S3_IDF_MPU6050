@@ -42,53 +42,19 @@ resistors.
 ## Logs
 
 ```
-I (316) cpu_start: Starting scheduler on PRO CPU.
-I (0) cpu_start: Starting scheduler on APP CPU.
-I (0) mpu6050_test: mpu6050 config: addr 0x68, sda 21, scl 22, clk, 100000 port 1
-I (4341) mpu6050_test: mpu6050 connection successfull.
-I (4341) mpu6050_test: **********************************************************************
-I (4341) mpu6050_test: Rotation:     x=-246   y=-356   z=-52
-I (4351) mpu6050_test: Acceleration: x=-16016   y=-644   z=-784
-I (4351) mpu6050_test: Temperature:    33
-I (5361) mpu6050_test: **********************************************************************
-I (5361) mpu6050_test: Rotation:     x=-173   y=-223   z=-41
-I (5361) mpu6050_test: Acceleration: x=-15872   y=-520   z=-148
-I (5371) mpu6050_test: Temperature:    33
-I (6371) mpu6050_test: **********************************************************************
-I (6371) mpu6050_test: Rotation:     x=-318   y=268   z=-60
-I (6371) mpu6050_test: Acceleration: x=-15860   y=-672   z=-172
-I (6381) mpu6050_test: Temperature:    33
-I (7381) mpu6050_test: **********************************************************************
-I (7381) mpu6050_test: Rotation:     x=-606   y=-209   z=183
-I (7381) mpu6050_test: Acceleration: x=-15616   y=-280   z=320
-I (7391) mpu6050_test: Temperature:    33
-I (8391) mpu6050_test: **********************************************************************
-I (8391) mpu6050_test: Rotation:     x=-714   y=1262   z=-98
-I (8391) mpu6050_test: Acceleration: x=-15948   y=-260   z=-60
-I (8401) mpu6050_test: Temperature:    33
-I (9401) mpu6050_test: **********************************************************************
-I (9401) mpu6050_test: Rotation:     x=-387   y=70   z=-370
-I (9401) mpu6050_test: Acceleration: x=-15972   y=-440   z=-152
-I (9411) mpu6050_test: Temperature:    33
-I (10411) mpu6050_test: **********************************************************************
-I (10411) mpu6050_test: Rotation:     x=120   y=-288   z=-56
-I (10411) mpu6050_test: Acceleration: x=-15848   y=-112   z=72
-I (10421) mpu6050_test: Temperature:    33
-I (11421) mpu6050_test: **********************************************************************
-I (11421) mpu6050_test: Rotation:     x=-186   y=-129   z=-42
-I (11421) mpu6050_test: Acceleration: x=-15844   y=-140   z=-52
-I (11431) mpu6050_test: Temperature:    33
-I (12431) mpu6050_test: **********************************************************************
-I (12431) mpu6050_test: Rotation:     x=-184   y=-7   z=-70
-I (12431) mpu6050_test: Acceleration: x=-15780   y=-128   z=16
-I (12441) mpu6050_test: Temperature:    33
-I (13441) mpu6050_test: **********************************************************************
-I (13441) mpu6050_test: Rotation:     x=-142   y=-142   z=-49
-I (13441) mpu6050_test: Acceleration: x=-15980   y=-96   z=-112
-I (13451) mpu6050_test: Temperature:    33
-I (14451) mpu6050_test: **********************************************************************
-I (14451) mpu6050_test: Rotation:     x=-218   y=-264   z=-45
-I (14451) mpu6050_test: Acceleration: x=-15864   y=-264   z=188
-I (14461) mpu6050_test: Temperature:    33
-I (15461) mpu6050_test: **********************************************************************
+2026-03-12 16:30:15 I (820101) mpu6050_system: Angle: Roll=0.18 Pitch=-0.31
+2026-03-12 16:30:16 I (820201) mpu6050_system: Angle: Roll=-0.31 Pitch=-0.20
+2026-03-12 16:30:16 I (820301) mpu6050_system: Angle: Roll=0.12 Pitch=-0.17
+2026-03-12 16:30:16 I (820401) mpu6050_system: Angle: Roll=0.07 Pitch=-0.30
+2026-03-12 16:30:16 I (820501) mpu6050_system: Angle: Roll=0.14 Pitch=0.11
+2026-03-12 16:30:16 I (820601) mpu6050_system: Angle: Roll=0.11 Pitch=0.09
+2026-03-12 16:30:16 I (820701) mpu6050_system: Angle: Roll=-0.06 Pitch=-0.07
+2026-03-12 16:30:16 I (820801) mpu6050_system: Angle: Roll=0.01 Pitch=0.02
+2026-03-12 16:30:16 I (820901) mpu6050_system: Angle: Roll=0.32 Pitch=0.02
+2026-03-12 16:30:16 I (821001) mpu6050_system: Angle: Roll=-0.12 Pitch=-0.27
+2026-03-12 16:30:16 I (821101) mpu6050_system: Angle: Roll=0.12 Pitch=-0.16
+2026-03-12 16:30:17 I (821201) mpu6050_system: Angle: Roll=-0.02 Pitch=0.15
+2026-03-12 16:30:17 I (821301) mpu6050_system: Angle: Roll=0.31 Pitch=-0.02
+2026-03-12 16:30:17 I (821401) mpu6050_system: Angle: Roll=0.05 Pitch=-0.24
+2026-03-12 16:30:17 I (821501) mpu6050_system: Angle: Roll=0.02 Pitch=-0.07
 ```
