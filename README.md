@@ -2,10 +2,31 @@
 
 ## What it does
 
-This example initializes an MPU-6050 connected on the I2C bus and then displays the accelerometer and gyroscope data in gravity and degrees per second in an endless loop.
+```mermaid
+```mermaid
+flowchart TD
 
-**NOTE:**
-Example is tested on ESP-IDF v4.4, v5.1 and ESP32 Wrover Module
+A[app_main()] --> B[led_init()]
+A --> C[platform_init()]
+A --> D[system_launch()]
+
+subgraph Platform Init
+C --> C1[i2cdev_init()]
+C --> C2[mpu6050_init_desc()]
+C --> C3[i2c_dev_probe()]
+C --> C4[mpu6050_init()]
+end
+
+subgraph FreeRTOS Task
+D --> E[xTaskCreate mpu6050_task]
+E --> F[calibrate_mpu6050()]
+F --> G[while loop]
+G --> H[Read accel + gyro]
+H --> I[Calculate roll & pitch]
+I --> J[ESP_LOGI]
+J --> G
+end
+```
 
 ## Wiring
 
