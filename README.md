@@ -3,29 +3,28 @@
 ## What it does
 
 ```mermaid
-```mermaid
 flowchart TD
 
-A[app_main()] --> B[led_init()]
-A --> C[platform_init()]
-A --> D[system_launch()]
+A[app_main] --> B[led_init]
 
-subgraph Platform Init
-C --> C1[i2cdev_init()]
-C --> C2[mpu6050_init_desc()]
-C --> C3[i2c_dev_probe()]
-C --> C4[mpu6050_init()]
-end
+A --> C[platform_init]
+C --> C1[i2cdev_init]
+C --> C2[mpu6050_init_desc]
+C --> C3[i2c_dev_probe]
+C --> C4[mpu6050_init]
 
-subgraph FreeRTOS Task
-D --> E[xTaskCreate mpu6050_task]
-E --> F[calibrate_mpu6050()]
-F --> G[while loop]
-G --> H[Read accel + gyro]
-H --> I[Calculate roll & pitch]
+A --> D[system_launch]
+D --> E[xTaskCreate_mpu6050_task]
+
+E --> F[calibrate_mpu6050]
+
+F --> G[while_loop]
+
+G --> H[read_accel_gyro]
+H --> I[calculate_roll_pitch]
 I --> J[ESP_LOGI]
+
 J --> G
-end
 ```
 
 ## Wiring
