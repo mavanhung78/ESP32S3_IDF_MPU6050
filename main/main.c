@@ -15,7 +15,7 @@
 
 #define LED_GPIO 48
 #define LED_NUM 1
-#define CALIB_SAMPLES 200
+#define CALIB_SAMPLES 500
 
 static const char *TAG = "mpu6050_system";
 

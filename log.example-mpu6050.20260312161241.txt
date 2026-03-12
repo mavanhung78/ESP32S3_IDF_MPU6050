@@ -1,0 +1,16 @@
+[0;32mI (5501) mpu6050_system: Angle: Roll=0.21 Pitch=0.25[0m
+[0;32mI (5601) mpu6050_system: Angle: Roll=0.04 Pitch=0.15[0m
+[0;32mI (5701) mpu6050_system: Angle: Roll=0.14 Pitch=0.03[0m
+[0;32mI (5801) mpu6050_system: Angle: Roll=0.24 Pitch=-0.13[0m
+[0;32mI (5901) mpu6050_system: Angle: Roll=-0.13 Pitch=-0.14[0m
+[0;32mI (6001) mpu6050_system: Angle: Roll=0.15 Pitch=-0.15[0m
+[0;32mI (6101) mpu6050_system: Angle: Roll=0.18 Pitch=-0.11[0m
+[0;32mI (6201) mpu6050_system: Angle: Roll=-0.00 Pitch=0.06[0m
+[0;32mI (6301) mpu6050_system: Angle: Roll=-0.11 Pitch=-0.27[0m
+[0;32mI (6401) mpu6050_system: Angle: Roll=0.28 Pitch=0.49[0m
+[0;32mI (6501) mpu6050_system: Angle: Roll=-0.27 Pitch=0.10[0m
+[0;32mI (6601) mpu6050_system: Angle: Roll=0.24 Pitch=0.18[0m
+[0;32mI (6701) mpu6050_system: Angle: Roll=0.07 Pitch=-0.10[0m
+[0;32mI (6801) mpu6050_system: Angle: Roll=-0.21 Pitch=0.11[0m
+[0;32mI (6901) mpu6050_system: Angle: Roll=0.16 Pitch=0.23[0m
+[0;32mI (7001) mpu6050_system: Angle: Roll=0.17 Pitch=-0.06[0m
