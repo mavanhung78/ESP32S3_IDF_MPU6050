@@ -5,31 +5,27 @@
 ```mermaid
 flowchart TD
 
-A[app_main] --> B[led_init]
+    A[app_main] --> B[led_init]
+    A --> C{platform_init}
+    
+    C -->|Fail| D[ESP_LOGE: Platform init failed]
+    D --> E[led_error - LED nhấp nháy đỏ liên tục]
+    
+    C -->|Success| F[system_launch]
+    F --> G[Task: mpu6050_task]
 
-A --> C[platform_init]
-C --> C1[i2cdev_init]
-C --> C2[mpu6050_init_desc]
-C --> C3[i2c_dev_probe]
-C --> C4[mpu6050_init]
-C --> C5[vl53l1x_init]
+    G --> H[calibrate_mpu6050]
+    H --> I[LED vàng - đang calibrate]
+    H --> J[Đọc dữ liệu accel & gyro 500 mẫu]
+    J --> K[Tính offset trung bình]
+    K --> L[LED xanh - sensor OK]
 
-A --> D[system_launch]
-
-D --> E[xTaskCreate_mpu6050_task]
-D --> K[xTaskCreate_vl53l1x_task]
-
-E --> F[calibrate_mpu6050]
-F --> G[imu_loop]
-G --> H[read_accel_gyro]
-H --> I[calculate_roll_pitch]
-I --> J[ESP_LOGI]
-J --> G
-
-K --> L[tof_loop]
-L --> M[read_distance]
-M --> N[distance_log]
-N --> L
+    G --> M[Loop vô hạn]
+    M --> N[Đọc accel & gyro]
+    N --> O[Trừ offset]
+    O --> P[Tính Roll, Pitch]
+    P --> Q[ESP_LOGI: In góc Roll/Pitch]
+    Q --> M
 ```
 ## Wiring
 
@@ -96,4 +92,3 @@ I (14451) mpu6050_test: Acceleration: x=-15864   y=-264   z=188
 I (14461) mpu6050_test: Temperature:    33
 I (15461) mpu6050_test: **********************************************************************
 ```
-
