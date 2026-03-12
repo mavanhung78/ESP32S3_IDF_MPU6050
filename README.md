@@ -12,21 +12,25 @@ C --> C1[i2cdev_init]
 C --> C2[mpu6050_init_desc]
 C --> C3[i2c_dev_probe]
 C --> C4[mpu6050_init]
+C --> C5[vl53l1x_init]
 
 A --> D[system_launch]
+
 D --> E[xTaskCreate_mpu6050_task]
+D --> K[xTaskCreate_vl53l1x_task]
 
 E --> F[calibrate_mpu6050]
-
-F --> G[while_loop]
-
+F --> G[imu_loop]
 G --> H[read_accel_gyro]
 H --> I[calculate_roll_pitch]
 I --> J[ESP_LOGI]
-
 J --> G
-```
 
+K --> L[tof_loop]
+L --> M[read_distance]
+M --> N[distance_log]
+N --> L
+```
 ## Wiring
 
 Connect `SCL` and `SDA` pins to the following pins with appropriate pull-up
