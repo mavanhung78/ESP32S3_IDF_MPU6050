@@ -79,6 +79,18 @@ void calibrate_mpu6050()
     mpu6050_acceleration_t accel;
     mpu6050_rotation_t gyro;
 
+     mpu6050_get_motion(&dev, &accel, &gyro);
+
+        ax_offset += accel.x;
+        ay_offset += accel.y;
+        az_offset += accel.z - 1.0;
+        gx_offset += gyro.x;
+        gy_offset += gyro.y;
+        gz_offset += gyro.z;
+
+    ESP_LOGI(TAG,"Raw accel offset: %.4f %.4f %.4f", ax_offset, ay_offset, az_offset);
+    ESP_LOGI(TAG,"Raw gyro offset : %.4f %.4f %.4f", gx_offset, gy_offset, gz_offset);
+
     for (int i = 0; i < CALIB_SAMPLES; i++)
     {
         mpu6050_get_motion(&dev, &accel, &gyro);
