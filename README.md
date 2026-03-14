@@ -1,6 +1,6 @@
-# Example for `mpu6050` driver
+# Minbot ESP32 Drone
 
-## What it does
+## Flow chart
 
 ```mermaid
 flowchart TD
